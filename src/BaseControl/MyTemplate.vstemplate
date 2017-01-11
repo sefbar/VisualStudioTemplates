@@ -1,0 +1,15 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>BaseControl.cs</DefaultName>
+    <Name>BaseControl</Name>
+    <Description>Creates a base control - other controls can inherit from</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="Component" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">button.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.Designer.cs" ReplaceParameters="true">button.Designer.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

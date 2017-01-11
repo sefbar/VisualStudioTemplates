@@ -1,0 +1,17 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>ReportLayout.cs</DefaultName>
+    <Name>ReportLayout</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+
+    <ProjectItem SubType="Form" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Form1.cs</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.Designer.cs" ReplaceParameters="true">Form1.Designer.cs</ProjectItem>
+    <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.resx" ReplaceParameters="true">Form1.resx</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
