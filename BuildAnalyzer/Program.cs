@@ -61,7 +61,8 @@ namespace BuildAnalyzer
                                         int line = int.Parse(parts[0]);
                                         int column = int.Parse(parts[1]);
 
-                                        string fullFileName = Path.Combine(Path.GetDirectoryName(buildLogFileName), Path.GetFileName(projectFolder), codeFileName);
+                                        string fullFileName = Path.GetFullPath( Path.Combine(Path.GetDirectoryName(buildLogFileName), Path.GetFileName(projectFolder), codeFileName));
+                                        
                                         string lastProgram = "";
 
                                         try
