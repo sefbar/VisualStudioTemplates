@@ -134,10 +134,10 @@ namespace BuildAnalyzer
             }
             finally
             {
-                if (File.Exists(buildLogFileName + ".NOerrors.txt"))
-                    File.Delete(buildLogFileName + ".NOerrors.txt");
+                if (File.Exists(buildLogFileName + ".NoErrors.txt"))
+                    File.Delete(buildLogFileName + ".NoErrors.txt");
                 if (counter == 0)
-                    File.Move(buildLogFileName + ".errors.txt", buildLogFileName + ".NOerrors.txt");
+                    File.Move(buildLogFileName + ".errors.txt", buildLogFileName + ".NoErrors.txt");
                 
                     
             }
