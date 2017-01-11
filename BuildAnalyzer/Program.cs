@@ -127,6 +127,7 @@ namespace BuildAnalyzer
                         sw.WriteLine("Build Analyzer Error:");
                         sw.WriteLine(e.Message);
                         sw.WriteLine(e.StackTrace);
+                        counter = 1;
                         return 0;
                     }
 
