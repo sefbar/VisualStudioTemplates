@@ -11,7 +11,7 @@ using ENV.Data;
 
 namespace $rootnamespace$.Printing
 {
-    partial class $safeitemname$Layout : Theme.Printing.ReportLayout
+    partial class $safeitemname$Layout : Shared.Theme.Printing.ReportLayout
     {
         $safeitemname$ _controller;
         public $safeitemname$Layout($safeitemname$ controller):base(controller)
