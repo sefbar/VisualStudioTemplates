@@ -8,7 +8,7 @@ namespace $rootnamespace$
 {
     
     /// <summary>$safeitemname$</summary>
-    public partial class $safeitemname$ : Theme.Controls.TextBox
+    public partial class $safeitemname$ : Shared.Theme.Controls.TextBox
     {
         
         
