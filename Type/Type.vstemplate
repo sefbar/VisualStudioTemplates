@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Type</Name>
+    <Description>Type Template</Description>
+    <Icon>Type.ico</Icon>
+    <TemplateID>bc758aa7-a83f-44f7-af97-1c0158060176</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <DefaultName>Type.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Type.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
