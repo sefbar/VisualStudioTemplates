@@ -10,6 +10,8 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Runtime.InteropServices;
+using EnvDTE;
+using EnvDTE80;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
@@ -46,6 +48,20 @@ namespace VisualStudioTemplates
         /// TuneupCommandPackage GUID string.
         /// </summary>
         public const string PackageGuidString = "ef47fcdc-bbee-4074-ae77-d53e281c7711";
+
+        private static DTE2 _dte;
+
+        internal static DTE2 DTE
+        {
+            get
+            {
+                if (_dte == null)
+                    _dte = ServiceProvider.GlobalProvider.GetService(typeof(DTE)) as DTE2;
+
+                return _dte;
+            }
+        }
+
 
         /// <summary>
         /// Initializes a new instance of the <see cref="TuneupCommand"/> class.

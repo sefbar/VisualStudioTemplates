@@ -6,13 +6,11 @@
 
 using System;
 using System.ComponentModel.Design;
-using System.Globalization;
-using System.Text;
-using System.Windows.Forms;
+using System.Windows;
+using System.Windows.Interop;
 using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
 
 namespace VisualStudioTemplates
 {
@@ -97,10 +95,21 @@ namespace VisualStudioTemplates
         /// <param name="e">Event args.</param>
         private void MenuItemCallback(object sender, EventArgs e)
         {
-            DTE2 vs = (DTE2)ServiceProvider.GetService(typeof(DTE));
-            vs.Properties["WindowsFormsDesigner", "General"].Item("AutoToolboxPopulate").Value = false;
-            vs.Properties["Debugging", "General"].Item("WarnIfNoUserCode").Value = false;
-            vs.Properties["Debugging", "EditAndContinue"].Item("EnableEditAndContinue").Value = false;
+            DTE2 dte = (DTE2)ServiceProvider.GetService(typeof(DTE));
+
+            var hwnd = new IntPtr(dte.MainWindow.HWnd);
+            var window = (System.Windows.Window) HwndSource.FromHwnd(hwnd).RootVisual;
+
+            string msg =
+                "The following settings are going to be changed:\n\nAutomatically Populate Toolbox will be set to False\nWarn if no user code on launch will be unchecked\nEnable Edit and Continue will be unchecked\n\nWould you like to continue?";
+            var answer = System.Windows.MessageBox.Show(window, msg, "Visual Studio Tuneup", MessageBoxButton.YesNo,MessageBoxImage.Question);
+
+            if (answer == MessageBoxResult.Yes)
+            {
+                dte.Properties["WindowsFormsDesigner", "General"].Item("AutoToolboxPopulate").Value = false;
+                dte.Properties["Debugging", "General"].Item("WarnIfNoUserCode").Value = false;
+                dte.Properties["Debugging", "EditAndContinue"].Item("EnableEditAndContinue").Value = false;
+            }
 
 
             //var p = vs.Properties["Debugging History", "General"];
