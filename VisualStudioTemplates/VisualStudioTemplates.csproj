@@ -107,6 +107,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <None Include="Shortcuts\profiler.snippet" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -126,6 +127,10 @@
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Async\Async.csproj">
+      <Project>{750dc9f3-e21c-4cab-8bfb-b2b3c6340299}</Project>
+      <Name>Async</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BaseControl\BaseControl.csproj">
       <Project>{539D79FD-8CC8-410C-8067-5AF0E878A854}</Project>
       <Name>BaseControl</Name>
