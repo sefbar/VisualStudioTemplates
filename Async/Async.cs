@@ -1,11 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-$if$ ($targetframeworkversion$ >= 3.5)using System.Linq;
-$endif$using System.Text;
+using System.Text;
+using Firefly.Box;
+using ENV.Data;
 
 namespace $rootnamespace$
 {
-	class $safeitemrootname$
-	{
-	}
+    public class $safeitemname$:AsyncHelperBase
+    {
+        public $safeitemname$()
+        {
+            DisableApplicationStart = true;
+            CopyParametersInMemory = true;
+        }
+        public void Run()
+        {
+            RunAsync<TheController>(t => t.Run());
+        }
+    }
 }

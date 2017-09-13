@@ -130,6 +130,9 @@
     <ProjectReference Include="..\Async\Async.csproj">
       <Project>{750dc9f3-e21c-4cab-8bfb-b2b3c6340299}</Project>
       <Name>Async</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
     <ProjectReference Include="..\BaseControl\BaseControl.csproj">
       <Project>{539D79FD-8CC8-410C-8067-5AF0E878A854}</Project>
