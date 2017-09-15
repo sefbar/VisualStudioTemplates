@@ -185,9 +185,9 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
-    <ProjectReference Include="..\WebProcess\WebProcess.csproj">
+    <ProjectReference Include="..\Async\Async.csproj">
       <Project>{12283BD5-6066-409F-98DB-460D374708A3}</Project>
-      <Name>WebProcess</Name>
+      <Name>Async</Name>
       <VSIXSubPath>ItemTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>

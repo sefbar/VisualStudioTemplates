@@ -31,8 +31,8 @@
     <ProjectGuid>{12283BD5-6066-409F-98DB-460D374708A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebProcess</RootNamespace>
-    <AssemblyName>WebProcess</AssemblyName>
+    <RootNamespace>Async</RootNamespace>
+    <AssemblyName>Async</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
@@ -74,13 +74,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="WebProcess.cs" />
+    <None Include="Async.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="WebProcess.ico" />
+    <None Include="Async.ico" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="WebProcess.vstemplate">
+    <VSTemplate Include="Async.vstemplate">
       <OutputSubPath>Templates</OutputSubPath>
     </VSTemplate>
   </ItemGroup>

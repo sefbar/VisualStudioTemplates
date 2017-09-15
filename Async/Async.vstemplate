@@ -3,15 +3,15 @@
   <TemplateData>
     <Name>Async</Name>
     <Description>Async class to run controllers Async</Description>
-    <Icon>WebProcess.ico</Icon>
+    <Icon>Async.ico</Icon>
     <TemplateID>00e00e1b-348e-434f-8b3b-ea8ec1e56041</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
-    <DefaultName>WebProcess.cs</DefaultName>
+    <DefaultName>Async.cs</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References />
-    <ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">WebProcess.cs</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Async.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>
