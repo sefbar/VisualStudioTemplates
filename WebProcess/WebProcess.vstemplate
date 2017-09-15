@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>WebProcess</Name>
-    <Description>WebProcess</Description>
+    <Name>Async</Name>
+    <Description>Async class to run controllers Async</Description>
     <Icon>WebProcess.ico</Icon>
-    <TemplateID>0fbcab5d-0f52-4736-949f-1a181e4f66c6</TemplateID>
+    <TemplateID>00e00e1b-348e-434f-8b3b-ea8ec1e56041</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>

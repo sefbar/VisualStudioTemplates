@@ -82,6 +82,7 @@
   <ItemGroup>
     <VSTemplate Include="Type.vstemplate">
       <OutputSubPath>Templates</OutputSubPath>
+      <SubType>Designer</SubType>
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>

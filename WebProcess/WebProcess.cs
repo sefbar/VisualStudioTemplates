@@ -2,36 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 using Firefly.Box;
-using ENV;
-using ENV.IO;
 using ENV.Data;
 
 namespace $rootnamespace$
 {
-    public class $safeitemname$:BusinessProcessBase
+    public class $safeitemname$:AsyncHelperBase
     {
-        //TODO: add the following code the the ApplicationPrograms Constructor:
-        //Add("$safeitemname$", typeof ($rootnamespace$.$safeitemname$));
-
-    
-        ENV.IO.TextTemplate page = new ENV.IO.TextTemplate("$safeitemname$.html");
-        ENV.IO.WebWriter web = new ENV.IO.WebWriter();
-
         public $safeitemname$()
         {
-
-            Streams.Add(web);
+            DisableApplicationStart = true;
+            CopyParametersInMemory = true;
         }
-
-        protected override void OnLeaveRow()
-        {
-            page.WriteTo(web);
-        }
-
         public void Run()
         {
-            Execute();
+            RunAsync<TheController>(t => t.Run());
         }
-  
-        }
+    }
 }
