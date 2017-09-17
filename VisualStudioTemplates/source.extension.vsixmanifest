@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="bf467156-f065-477b-ae06-dee75b8d75b0" Version="1.3" Language="en-US" Publisher="FireflyMigration" />
+    <Identity Id="bf467156-f065-477b-ae06-dee75b8d75b0" Version="1.4" Language="en-US" Publisher="FireflyMigration" />
     <DisplayName>VisualStudioTemplates</DisplayName>
     <Description xml:space="preserve">Templates and Snippets for Migrated Applications</Description>
   </Metadata>
